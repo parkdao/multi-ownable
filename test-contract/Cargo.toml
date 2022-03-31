@@ -1,0 +1,18 @@
+[package]
+name = "test-contract"
+version = "0.0.1"
+authors = ["middlew4y <middlew4y@protonmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "4.0.0-pre.5"
+near-contract-standards = "4.0.0-pre.5"
+multi-ownable = { path = "../multi-ownable" }
+
+[dev-dependencies]
+tokio = { version = "1.10.0", features = ["full"] }
+workspaces = "0.1" 
+anyhow = "1.0"

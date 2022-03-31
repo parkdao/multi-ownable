@@ -1,0 +1,18 @@
+[package]
+name = "multi-ownable"
+description = "NEAR plugin for sharing ownership of a contract between multiple accounts"
+version = "0.1.2"
+edition = "2021"
+authors = ["middlew4y <middlew4y@protonmail.com>"]
+keywords = ["near", "multisig", "ownable"]
+categories = ["no-std", "wasm"]
+license = "MIT"
+repository = "https://github.com/parkdao/multi-ownable"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "4.0.0-pre.5"
+sha2 = "0.10.1"
+
